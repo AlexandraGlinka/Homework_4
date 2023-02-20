@@ -55,6 +55,22 @@ public class Main {
         }
     }
     public static void task5() {
-
+        System.out.println("Задача 5");
+        int ageKid = 16;
+        boolean ageLessThan5 = ageKid < 5;
+        boolean age5_14 = ageKid >= 5 && ageKid < 14;
+        boolean ageMoreThan14 = ageKid >= 14;
+        if (ageLessThan5) {
+            System.out.println("Если возраст ребенка равен " + ageKid +
+                    ", то ему нельзя кататься на аттракционе");
+        } else
+        if (age5_14) {
+            System.out.println("Если возраст ребенка равен " + ageKid +
+                    ", то ему можно кататься на аттракционе в сопровождении");
+        } else
+        if (ageMoreThan14) {
+            System.out.println("Если возраст ребенка равен " + ageKid +
+                    ", то ему можно кататься на аттракционе без сопровождения взрослого");
+        }
     }
 }
