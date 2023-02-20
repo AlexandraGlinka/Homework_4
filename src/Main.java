@@ -5,6 +5,7 @@ public class Main {
         task3();
         task4();
         task5();
+        task6();
     }
     public static void task1 () {
         System.out.println("Задача 1");
@@ -71,6 +72,23 @@ public class Main {
         if (ageMoreThan14) {
             System.out.println("Если возраст ребенка равен " + ageKid +
                     ", то ему можно кататься на аттракционе без сопровождения взрослого");
+        }
+    }
+    public static void task6() {
+        System.out.println("Задача 6");
+        /*Вместимость одного вагона поезда — 102 человека. Вагон рассчитан на 60 сидячих мест, все остальные — стоячие.
+        С помощью условного оператора и конструкции else напишите программу,
+        которая выводит в консоль сообщение о том, есть ли место в вагоне, сидячее или стоячее, или вагон уже полностью забит.*/
+        int capacity = 102;
+        int seat = 60;
+        int standingPlace = capacity - seat;
+        int countOfPassengers = 80;
+        if (countOfPassengers > capacity) {
+            System.out.println("В вагоне больше нет мест");
+        } else if (countOfPassengers > standingPlace && countOfPassengers <= capacity) {
+            System.out.println("В вагоне остались только стоячие места");
+        } else if (countOfPassengers <= standingPlace) {
+            System.out.println("В вагоне еще есть сидячие места");
         }
     }
 }
