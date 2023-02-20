@@ -4,6 +4,7 @@ public class Main {
         task2();
         task3();
         task4();
+        task5();
     }
     public static void task1 () {
         System.out.println("Задача 1");
@@ -42,15 +43,18 @@ public class Main {
         boolean ageMoreThan24 = age >= 25;
         if (age2_6) {
             System.out.println("Если возраст человека равен " + age + ", то ему нужно ходить в детский сад");
-        }
+        } else
         if (age7_18) {
             System.out.println("Если возраст человека равен " + age + ", то ему нужно ходить в школу");
-        }
+        } else
         if (age19_24) {
             System.out.println("Если возраст человека равен " + age + ", то ему нужно ходить в университет");
-        }
+        } else
         if (ageMoreThan24) {
             System.out.println("Если возраст человека равен " + age + ", то ему нужно ходить на работе");
         }
+    }
+    public static void task5() {
+
     }
 }
