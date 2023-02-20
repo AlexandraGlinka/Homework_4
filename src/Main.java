@@ -6,8 +6,10 @@ public class Main {
         task4();
         task5();
         task6();
+        task7();
     }
-    public static void task1 () {
+
+    public static void task1() {
         System.out.println("Задача 1");
         //задача 1
         int age = 18;
@@ -17,6 +19,7 @@ public class Main {
             System.out.println("Если возраст человека равен " + age + ", то он не достиг совершеннолетия, нужно немного подождать");
         }
     }
+
     public static void task2() {
         System.out.println("Задача 2");
         int weather = 5;
@@ -26,6 +29,7 @@ public class Main {
             System.out.println("На улице " + weather + " градусов, можно идти без шапки");
         }
     }
+
     public static void task3() {
         System.out.println("Задача 3");
         int speed = 61;
@@ -35,6 +39,7 @@ public class Main {
             System.out.println("Если скорость " + speed + ", то можно ездить спокойно");
         }
     }
+
     public static void task4() {
         System.out.println("Задача 4");
         int age = 7;
@@ -44,17 +49,15 @@ public class Main {
         boolean ageMoreThan24 = age >= 25;
         if (age2_6) {
             System.out.println("Если возраст человека равен " + age + ", то ему нужно ходить в детский сад");
-        } else
-        if (age7_18) {
+        } else if (age7_18) {
             System.out.println("Если возраст человека равен " + age + ", то ему нужно ходить в школу");
-        } else
-        if (age19_24) {
+        } else if (age19_24) {
             System.out.println("Если возраст человека равен " + age + ", то ему нужно ходить в университет");
-        } else
-        if (ageMoreThan24) {
+        } else if (ageMoreThan24) {
             System.out.println("Если возраст человека равен " + age + ", то ему нужно ходить на работе");
         }
     }
+
     public static void task5() {
         System.out.println("Задача 5");
         int ageKid = 16;
@@ -64,21 +67,17 @@ public class Main {
         if (ageLessThan5) {
             System.out.println("Если возраст ребенка равен " + ageKid +
                     ", то ему нельзя кататься на аттракционе");
-        } else
-        if (age5_14) {
+        } else if (age5_14) {
             System.out.println("Если возраст ребенка равен " + ageKid +
                     ", то ему можно кататься на аттракционе в сопровождении");
-        } else
-        if (ageMoreThan14) {
+        } else if (ageMoreThan14) {
             System.out.println("Если возраст ребенка равен " + ageKid +
                     ", то ему можно кататься на аттракционе без сопровождения взрослого");
         }
     }
+
     public static void task6() {
         System.out.println("Задача 6");
-        /*Вместимость одного вагона поезда — 102 человека. Вагон рассчитан на 60 сидячих мест, все остальные — стоячие.
-        С помощью условного оператора и конструкции else напишите программу,
-        которая выводит в консоль сообщение о том, есть ли место в вагоне, сидячее или стоячее, или вагон уже полностью забит.*/
         int capacity = 102;
         int seat = 60;
         int standingPlace = capacity - seat;
@@ -90,5 +89,22 @@ public class Main {
         } else if (countOfPassengers <= standingPlace) {
             System.out.println("В вагоне еще есть сидячие места");
         }
+    }
+
+    public static void task7() {
+        System.out.println("Задача 7");
+        int one = 999;
+        int two = 800;
+        int three = 100;
+        if (one > two) {
+            if (one > three) {
+                System.out.println("Максимально число " + one);
+            } else if (three > one) {
+                System.out.println("Максимальное число " + three);
+            }
+        } else if (two > three) {
+            System.out.println("Максимальное число " + two);
+        } else
+            System.out.println("Максимальное число " + three);
     }
 }
